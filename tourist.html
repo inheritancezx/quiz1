@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>langit web</title>
+        <link rel="stylesheet"  href="tourist.css">
+        <link rel="icon" href="images/logo langit.png">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo"> <img src="images/logo langit.png"> </a>
+            <ul>
+                <li><a href="profile.html">profile</a></li>
+                <li><a href="hometown.html">hometown</a></li>
+                <li><a href="food.html">food</a></li>
+                <li><a href="#title" class="active">tourism</a></li>
+            </ul>
+        </header>
+
+        <section id="title">
+            <div>
+                <h2>Jakarta's Tourism</h2>
+                <br>
+                <p>Jakarta, as Indonesia's vibrant capital, offers a diverse tapestry of tourism 
+                    experiences, from exploring its rich cultural heritage and enjoying its bustling 
+                    urban life to savoring the country's delectable culinary traditions. Visitors 
+                    can immerse themselves in a dynamic blend of traditions, modernity, and natural 
+                    beauty within the city.</p>
+                <br><br>
+                <br><br>
+                <br><br>    
+                <a class="scroll" href="#mni" ></a>
+            </div>
+
+            
+        </section>
+
+        <section id="mni">
+            <div>
+                <h2>Museum Nasional Indonesia</h2>
+                <br>
+                <p>The National Museum of Indonesia, located in Jakarta, is a historic institution dating 
+                    back to 1778, making it one of Southeast Asia's oldest museums. Housed in an impressive 
+                    neoclassical building known as the "Elephant Building," it features a vast and diverse 
+                    collection of cultural artifacts, including prehistoric items, Hindu-Buddhist art, 
+                    traditional textiles, and ethnographic pieces. The museum serves as both a showcase of 
+                    Indonesia's rich cultural heritage and a center for education and research, making it a 
+                    significant destination for tourists and scholars alike.</p>
+                <br><br>
+                <a href="#pik">next</a>
+            </div>
+        </section>
+
+        <section id="pik">
+            <div>
+                <h2>Pantai Indah Kapuk</h2>
+                <br>
+                <p>Pantai Indah Kapuk (PIK) is a well-known area located in North Jakarta, Indonesia. 
+                    It's a modern and upscale residential and commercial district situated along the 
+                    coastline of Jakarta Bay. Pantai Indah Kapuk is known for its beautiful waterfront 
+                    views, modern housing developments, a wide range of culinary options, and a vibrant 
+                    nightlife scene. It's a popular destination for both residents and visitors, offering 
+                    a mix of residential, commercial, and recreational facilities in a coastal setting.</p>
+                <br><br>
+                <a href="#ragunan">next</a>
+            </div>
+        </section>
+        <section id="ragunan">
+            <div>
+                <h2>Ragunan Zoo</h2>
+                <br>
+                <p>Ragunan Zoo, located in South Jakarta, Indonesia, is one of the country's most prominent 
+                    and oldest zoological parks. Spanning over 140 hectares, it houses a wide variety of 
+                    animal species, including mammals, birds, reptiles, and more. Ragunan Zoo serves as a 
+                    popular recreational and educational destination, offering visitors a chance to explore 
+                    diverse wildlife and natural habitats while enjoying a family-friendly atmosphere.</p>
+                <br><br>
+                <a href="#title">back to up</a>
+            </div>
+        </section>
+
+        </div>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("clingy", window.scrollY > 0);
+            })
+        </script>
+
+        <footer>
+            <div class="f-bottom">
+                <p> copyright &copy;2023 langitweb. </p>
+            </div>
+        </footer>
+    </body>
+</html>

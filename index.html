@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>langit web</title>
+        <link rel="stylesheet"  href="scroll.css">
+        <link rel="icon" href="images/logo langit.png">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"> <img src="images/logo langit.png"> </a>
+            <ul>
+                <li><a href="profile.html">profile</a></li>
+                <li><a href="hometown.html">hometown</a></li>
+                <li><a href="food.html">food</a></li>
+                <li><a href="tourist.html">tourism</a></li>
+            </ul>
+        </header>
+
+        <section id="attribute">
+            <img src="images/2.png" id="moon">
+            <h2 id="text">hello all!</h2>
+            <a href="#Homepage" id="next"> next >> </a>
+            <img src="images/1.png" id="clouds">
+        </section>
+
+        <section id="Homepage">
+            <div class="long">
+                <h2>This is Homepage :)</h2>
+                <br>
+                <p>
+                Welcome to my digital heaven! I'm Fayza Aqila, and I invite you 
+                to embark on a journey through my world, one where creativity 
+                knows no bounds and curiosity fuels my every endeavor.
+                <br><br>
+                My canvas is diverse and boundless. this website is just about me, 
+                an ordinary undergraduate student. Find out more about me, my hometown,
+                as well as all foods and tourist attraction of my hometown.
+                <br><br>
+                Feel free to wander through the pages, linger over my creations, 
+                and join my personal space! Thank you for stepping into my world. 
+                I hope you find inspiration, entertainment, and a new insights here. 
+                Your presence is the most valuable treasure in this corner of the internet, 
+                and I look forward to the incredible journey we'll share. 
+                <br><br>
+                welcome to my petit world!
+                </p>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("clingy", window.scrollY > 0);
+            })
+        </script>
+    
+        <script>
+            let moon = document.getElementById('moon');
+            let text = document.getElementById('text');
+            let next = document.getElementById('next');
+            
+            window.addEventListener('scroll', function(){
+                let value =window.scrollY;
+                moon.style.top = value * 1.05 + 'px';
+                text.style.marginLeft = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                next.style.marginTop = value * 1.5 + 'px';
+            })
+
+            // window.onscroll
+        </script>
+
+        <footer>
+            <div class="f-bottom">
+                <p> copyright &copy;2023 langitweb. </p>
+            </div>
+        </footer>
+    </body>
+</html>

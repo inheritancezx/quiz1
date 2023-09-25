@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>langit web</title>
+        <link rel="stylesheet"  href="food.css">
+        <link rel="icon" href="images/logo langit.png">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo"> <img src="images/logo langit.png"> </a>
+            <ul>
+                <li><a href="profile.html">profile</a></li>
+                <li><a href="hometown.html">hometown</a></li>
+                <li><a href="#title" class="active">food</a></li>
+                <li><a href="tourist.html">tourism</a></li>
+            </ul>
+        </header>
+
+        <section id="title">
+            <div>
+                <h2>Jakarta's Traditional Food</h2>
+                <br>
+                <p>Jakarta's culinary scene combines a rich 
+                    tapestry of herbs, spices, and cooking techniques. From street 
+                    vendors to upscale restaurants, Jakarta's culinary 
+                    landscape invites to embark on a flavorful 
+                    journey, where every meal tells a story of tradition and innovation.</p>
+                <br><br>
+                <br><br>
+                <br><br>    
+                <a class="scroll" href="#uduk" ></a>
+            </div>
+
+            
+        </section>
+
+        <section id="uduk">
+            <div>
+                <h2>Nasi Uduk</h2>
+                <br>
+                <p>"Nasi Uduk" is a traditional Jakartarian dish (originally from betawi culture) 
+                    and is now very popular in all of Indonesia. It consists of fragrant coconut 
+                    rice cooked with coconut milk and various aromatic spices, such as lemongrass, 
+                    pandan leaves, and galangal. This dish is often served with a variety of side 
+                    dishes, such as fried chicken, fried shallots, toasted coconut flakes, fried 
+                    anchovies, and a spicy chili sambal.</p>
+                <br><br>
+                <a href="#mayang">next</a>
+            </div>
+        </section>
+
+        <section id="mayang">
+            <div>
+                <h2>Es Selendang Mayang</h2>
+                <br>
+                <p>"Es Selendang Mayang" is a traditional Jakartarian dessert. Popular not only in
+                     Jakarta, but also other parts of Java. This sweet and colorful dessert consists 
+                     of layers of agar-agar (a jelly-like substance made from seaweed) in various 
+                     vibrant colors, typically red, green, and white, which are cut into small, 
+                     diamond-shaped pieces. Eventhough not visually appealing but also offers 
+                     a delightful combination of sweet and refreshing flavors, making it a favorite 
+                     treat during festive occasions and celebrations. </p>
+                <br><br>
+                <a href="#asinan">next</a>
+            </div>
+        </section>
+        <section id="asinan">
+            <div>
+                <h2>Asinan Betawi</h2>
+                <br>
+                <p>"Asinan Betawi" is a popular dish originating from Jakarta, specifically the Betawi 
+                    culture. It is a type of preserved or pickled salad that typically includes a variety 
+                    of vegetables and fruits, such as cucumber, carrot, cabbage, pineapple, and bean sprouts. 
+                    The ingredients are mixed together and then generously dressed with a sweet and tangy 
+                    tamarind-based sauce, often garnished with peanuts and krupuk (deep-fried shrimp 
+                    crackers).</p>
+                <br><br>
+                <a href="#title">back to up</a>
+            </div>
+        </section>
+
+        </div>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("clingy", window.scrollY > 0);
+            })
+        </script>
+
+        <footer>
+            <div class="f-bottom">
+                <p> copyright &copy;2023 langitweb. </p>
+            </div>
+        </footer>
+    </body>
+</html>

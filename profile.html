@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>langit web</title>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="profile.css">
+        <link rel="icon" href="images/logo langit.png">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo"> <img src="images/logo langit.png"> </a>
+            <ul>
+                <li><a href="#" class="active">profile</a></li>
+                <li><a href="hometown.html">hometown</a></li>
+                <li><a href="food.html">food</a></li>
+                <li><a href="tourist.html">tourism</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="content">
+                <h1>Profile</h1>
+                <img src="images/profile.JPG">
+                <br>
+                <p>
+                Currently pursuing studies in Institut Teknologi Sepuluh Nopember 
+                on Informatics field with a goal of becoming an international 
+                cyber security consultant. Is also interested in graphic design 
+                and content writing. Finds comfort in spare time by reading books 
+                or writing short stories. 
+                <br><br>
+                </p>
+            </div>
+
+            <div class="button">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/fayza-aqila-8aa9ba229/">LinkedIn</a></li>
+                    <li><a href="https://drive.google.com/file/d/1wqNcvl4vs2SMAvd-jD-zFdmxnLmdIgKh/view?usp=sharing">CV</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("clingy", window.scrollY > 0);
+            })
+        </script>
+
+        <footer>
+            <div class="f-bottom">
+                <p> copyright &copy;2023 langitweb. </p>
+            </div>
+        </footer>
+    </body>
+</html>
