@@ -143,6 +143,7 @@ section img {
 .long {
     position: relative;
     padding: 150px;
+    min-height: 100vh;
     background: #88adde;
 }
 
